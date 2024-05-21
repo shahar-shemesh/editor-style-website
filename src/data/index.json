@@ -1,0 +1,101 @@
+{
+  "skills": [
+    {
+      "id": "3",
+      "title": "Programming languages",
+      "stack": [
+        "C/C++",
+        "Python",
+        "JavaScript",
+        "Java"
+      ]
+    },
+    {
+      "id": "1",
+      "title": "Frontend",
+      "stack": [
+        "HTML5",
+        "CSS3",
+        "React",
+        "Redux",
+        "Tailwind-CSS"
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Backend",
+      "stack": [
+        "NodeJS",
+        "MongoDB",
+        "Firebase",
+        "Django",
+        "MySQL"
+      ]
+    }
+  ],
+  "portfolio": [
+    {
+      "id": "1",
+      "src": "/img/gadish-suite.png",
+      "title": "Gadish Suite application",
+      "description": "A responsive ReactJS application that showcases the Gadish Suite, a luxurious vacation rental nestled in the beautiful north of the country. It provides potential guests with all the information they need to make an informed decision and book a memorable stay.",
+      "link": "gadish-suite.co.il"
+    },
+    {
+      "id": "9",
+      "src": "/img/file-installation.jpg",
+      "title": "File Installation In VM",
+      "description": "The script establishes an SSH connection to the guest VM and allows the user to select a local folder containing files to be installed and executed on the VM. It copies the files to the VM, installs them if executable, executes PowerShell scripts silently, and retrieves relevant files from the VM.",
+      "link": "github.com/shahar-shemesh/File_Installation_In_GUEST_VM"
+    },
+    {
+      "id": "2",
+      "src": "/img/green-dorshemesh.com.png",
+      "title": "Dor Portfolio website",
+      "description": "Portfolio website that I developed to showcase the works of a graphic designer. Responsive, ensuring a seamless experience across various devices, including mobile phones and tablets. HTML5, CSS3, JavaScript, MongoDB, ExpressJS, EJS",
+      "link": "dorshemesh.com"
+    },
+    {
+      "id": "3",
+      "src": "/img/uzilaw.png",
+      "title": "Uzi Law Firm's website",
+      "description": "A Law Firm's website showcasing their specialization. The site emphasizes the firm's comprehensive legal services. It features an intuitive user interface for easy navigation, ensuring visitors can quickly find information about the firm's expertise and contact details.",
+      "link": "www.uzilaw.co.il"
+    },
+    {
+      "id": "7",
+      "src": "/img/shoppinglisttoapi.png",
+      "title": "Shopping List To API",
+      "description": "Shopping List To API serves as a comprehensive platform for users to manage their shopping lists efficiently. Users can create, update, and store their lists in a SQL database, ensuring easy access and synchronization across devices.",
+      "link": "github.com/shahar-shemesh/shoppinglist-to-api"
+    },
+    {
+      "id": "4",
+      "src": "/img/barberbuddy.png",
+      "title": "Booking App",
+      "description": "A barbershop booking app. Allows users to easily book appointments, view barbershop information and location, and manage their bookings. The app has a clean and intuitive user interface, making it simple to use.",
+      "link": "github.com/shahar-shemesh/BARBERBUDDY"
+    },
+    {
+      "id": "5",
+      "src": "/img/sunshineFood.png",
+      "title": "Sunshine Food App",
+      "description": "Food Order App offers a user-friendly platform for online food ordering. The app offers a wide range of options to choose from. Built with React for the front-end and Node.js for the back end, this app provides a seamless and interactive user experience.",
+      "link": "github.com/shahar-shemesh/sunshine-food-app"
+    },
+    {
+      "id": "6",
+      "src": "/img/tic-tac-toe-game.png",
+      "title": "Tic Tac Toe game",
+      "description": "Tic Tac Toe game: developed using ReactJS, showcasing a simple yet interactive gaming experience. Designed for two players, this game runs in any modern web browser.",
+      "link": "github.com/shahar-shemesh/reactjs-Tic-Tac-Toe-Game"
+    },
+    {
+      "id": "8",
+      "src": "/img/snake.png",
+      "title": "Snake game",
+      "description": "The Classic Snake Game: developed with C++, implemented OOP.  In the gameplay experience, the player controls a snake that grows in length as it consumes food (the $ symbol), while avoiding collisions with itself and the walls.",
+      "link": "github.com/shahar-shemesh/snake-game"
+    }
+  ]
+}

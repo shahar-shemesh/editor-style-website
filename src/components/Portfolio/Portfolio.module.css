@@ -1,0 +1,14 @@
+.portfolio {
+    z-index: 2;
+    margin: 0;
+}
+
+.projectList {
+    margin: 0 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(25rem, 1fr));
+    column-gap: 3rem;
+    row-gap: 3rem;
+    /* grid-template-rows: repeat(auto-fit, minmax(20rem, 1fr)); */
+    /* grid-gap: 4rem; */
+}

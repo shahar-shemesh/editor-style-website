@@ -1,0 +1,36 @@
+.content {
+    display: grid;
+    color: var(--stringColor);
+}
+
+.content p{
+    display: inline-block;
+    width: fit-content;
+    z-index: 2;
+}
+
+.content p>a {
+    color: var(--keywordColor);
+    text-decoration-line: underline;
+}
+
+
+
+.content p:nth-child(2) {
+    display: inline-block;
+}
+
+.slashes {
+    color: var(--commentColor);
+}
+
+
+
+
+.about_section {
+    &::after {
+        top: 1.4rem;
+        bottom: 0.4rem;
+        left: 0;
+    }
+}

@@ -1,0 +1,47 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 3rem 0 3rem 0;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    gap: 2rem;
+}
+
+
+.emojy {
+    display: flex;
+    align-items: center;
+    img {
+        border-radius: 50%;
+        width: 8vw;
+        border: 3px solid var(--commentColor);
+    }
+}
+
+
+.content {
+
+    .myname {
+        font-size: 1.3rem;
+        color: var(--logoNameColor);
+    }
+
+    .mytitle {
+        color: var(--keywordColor);
+    }
+
+}
+
+
+.contactButtons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}

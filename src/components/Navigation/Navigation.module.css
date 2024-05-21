@@ -1,0 +1,12 @@
+nav {
+    margin: 2rem 0 1rem 0;
+}
+
+.nav_links{
+    display: grid;
+}
+.nav_item{
+    display: inline-block;
+    width: 10%;
+    z-index: 2;
+}
