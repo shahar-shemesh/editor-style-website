@@ -6,9 +6,9 @@ export default function LineNumbers({ }) {
     const [rows, setRows] = useState(10);
 
     useEffect(() => {
-        const element = document.getElementById("lines");
-        const linesObj = window.getComputedStyle(element);
-        let rowsRrid = linesObj.getPropertyValue("grid-template-rows").split(" ").length;
+        // const element = document.getElementById("lines");
+        // const linesObj = window.getComputedStyle(element);
+        // let rowsRrid = linesObj.getPropertyValue("grid-template-rows").split(" ").length;
 
         // const rootElement = document.getElementById("root");
         // const rootStyles = window.getComputedStyle(rootElement);
@@ -18,11 +18,10 @@ export default function LineNumbers({ }) {
         // rootElement.style.setProperty('--pageRows', rowsRrid);
 
         // const rowsa = document.documentElement.getBoundingClientRect().height;
-        const rowsa = document.body.scrollHeight;
+        const screenHeight = document.body.scrollHeight;
 
         const lineHeight = 16*1.5;
-        setRows(Math.floor(rowsa/lineHeight));
-        console.log(rowsRrid);
+        setRows(Math.floor(screenHeight/lineHeight));
 
 
     }, []);
