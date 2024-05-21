@@ -1,7 +1,7 @@
 
 .card {
     z-index: 2;
-    margin-top: 1.5rem;
+    /* margin-top: 1.5rem; */
     display: flex;
     flex-direction: column;
 }
@@ -12,11 +12,11 @@
     flex-direction: column;
     text-align: left;
     color: var(--lineNumbersColor);
-
 }
 
 .image img {
-    width: 100%;
+    width: 75%;
+    padding-left: 1px;
     height: 25vh;
     object-fit: cover;
     object-position: 50% 5%;
