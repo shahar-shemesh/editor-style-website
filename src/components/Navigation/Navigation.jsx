@@ -9,8 +9,12 @@ export default function Navigation() {
     <nav tabIndex="0" id='navigation'>
       <ul className={classes.nav_links}>
 
-      <li className={classes.nav_item}>
+        <li className={classes.nav_item}>
           <a href="#about" className="navLink">about me</a>
+        </li>
+
+        <li className={classes.nav_item}>
+          <a href="#myskills" className="navLink">my skills</a>
         </li>
 
         <li className={classes.nav_item}>

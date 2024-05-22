@@ -7,7 +7,7 @@ export default function Skills() {
 
 
   return (
-    <section tabIndex="0" className={classes.skills}>
+    <section id='myskills' tabIndex="0" className={classes.skills}>
 
       <ul className={classes.skillList}>
 
