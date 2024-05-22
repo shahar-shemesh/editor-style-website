@@ -4,6 +4,8 @@
     /* margin-top: 1.5rem; */
     display: flex;
     flex-direction: column;
+    scroll-snap-align: start;
+    scroll-margin: 20px;
 }
 
 
@@ -15,13 +17,14 @@
 }
 
 .image img {
-    width: 75%;
+    width: 80%;
     padding-left: 1px;
     height: 25vh;
     object-fit: cover;
     object-position: 50% 5%;
     opacity: 0.8;
     border-radius: 5px;
+    
 }
 
 
@@ -31,5 +34,15 @@
 
     a {
         color: var(--keywordColor);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .cardContent {
+        width: auto;
+    }
+    .image img {
+        width: 85%;
+        height: 15vh;
     }
 }

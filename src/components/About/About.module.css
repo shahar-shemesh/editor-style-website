@@ -1,5 +1,6 @@
 .about_section {
     margin: 1.5rem 0 3rem 0;
+
     &::after {
         top: 1.4rem;
         bottom: 0.4rem;
@@ -12,10 +13,11 @@
     color: var(--stringColor);
 }
 
-.content p{
+.content p {
     display: inline-block;
     width: fit-content;
     z-index: 2;
+    user-drag: none;
 }
 
 .content p>a {
@@ -34,5 +36,9 @@
 }
 
 
+@media only screen and (max-width: 600px) {
+    .about_section {
+        margin: 1.5rem 0 1.5rem 0;
+    }
 
-
+}

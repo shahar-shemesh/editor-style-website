@@ -1,5 +1,7 @@
 * {
   -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 
 
@@ -17,6 +19,7 @@
   --logoNameColor: #f9d81b;
   /* --functionColor: #dcdcaa; */
   --functionColor: #d8dcab;
+  --navLinksColor: #cd7cc9;
 
   /***** Main Font: *****/
   /* font-family: "Consolas", monospace; */
@@ -92,13 +95,21 @@ nav {
   position: relative;
   margin: 3rem 0 3rem 0;
   border: solid #5e5e5e;
-  border-width: 0 0 0 1px ;
+  border-width: 0 0 0 1px;
   padding-left: 1.5rem;
+  scroll-snap-align: start;
+  scroll-margin: 20px;
 }
 
-section:focus-within, nav:focus-within {
+header {
+  scroll-snap-align: start;
+  scroll-margin: 40px;
+}
+
+section:focus-within,
+nav:focus-within {
   border: solid #b7b7b7;
-  border-width: 0 0 0 1px ;
+  border-width: 0 0 0 1px;
 }
 
 #lines {
@@ -144,11 +155,74 @@ section:focus-within, nav:focus-within {
 
 #lines p:focus-within {
   border: solid #303030;
-  border-width: 2px 0;
+  border-width: 2px 0 2px 2px;
   margin: -1px;
 
   &::before {
     color: #fff;
-    
+
+  }
+}
+
+[contenteditable] {
+  outline: 0px solid transparent;
+  caret-color: #fff;
+}
+
+
+/************************************ responsive *************************/
+
+@media only screen and (max-width: 600px) {
+
+  body {
+    margin: 0 1.5rem 0 3rem;
+
+  }
+
+  section,
+  nav {
+    margin: 1.5rem 0 1.5rem 0;
+  }
+
+
+  #lines {
+    z-index: 1;
+    height: 100vh;
+    width: 88vw;
+    position: absolute;
+    display: grid;
+    align-content: baseline;
+    grid-template-rows: repeat(auto-fill, 1.5rem);
+
+    /* padding: 1rem 1.3rem; */
+    counter-reset: line;
+    text-align: left !important;
+
+    &::after {
+      content: none;
+      position: absolute;
+      border-right: 1px solid #5e5e5e;
+    }
+
+
+    p {
+      /* height: 1.5rem; */
+      width: 100%;
+      counter-increment: line;
+      /* padding-left: 35px; */
+
+      &::before {
+        display: flex;
+        flex-direction: column;
+        /* font-size: 0.9rem; */
+        content: counter(line);
+        /* width: 0.5vw; */
+        margin-left: -3rem;
+        margin-right: 3rem;
+        color: #a0a0a0;
+        width: 2em;
+        text-align: right;
+      }
+    }
   }
 }

@@ -17,12 +17,17 @@ export default function Card({ item }) {
                 <p className={classes.technologics}>
                     Technologics: <span className={classes.fields}>{item.title}</span>
                 </p>
-                {/* <p className={classes.description}>
-                    Description: <span className={classes.fields}>{item.description}</span>
-                </p> */}
+                <p className={classes.description}>
+                    Description: <span className={classes.fields}>
+                    {item.description.length > 50 ? `${item.description.substring(0, 47)}...` : item.description}
+
+                    </span>
+                </p>
                 <p className={classes.link}>
                     Link: <span className={classes.fields}>
-                        <a target='_blank' href={"https://" + item.link} className={classes.aLink}>{item.link}</a>
+                        <a target='_blank' href={"https://" + item.link} className={classes.aLink}>
+                            {item.link.length > 50 ? `${item.link.substring(0, 47)}...` : item.link}
+                        </a>
                     </span>
                 </p>
             </div>
