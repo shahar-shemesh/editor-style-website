@@ -1,6 +1,6 @@
 .divider {
   display: flex;
-  font-size: 16px;
+  /* font-size: 16px; */
   color: var(--commentColor);
   width: 60%;
 }
