@@ -15,11 +15,14 @@ export default function Card({ item }) {
                     Customer: <span className={classes.fields}>{item.title}</span>
                 </p>
                 <p className={classes.technologics}>
-                    Technologics: <span className={classes.fields}>{item.title}</span>
+                    Technologics: <span className={classes.fields}>
+                        {item.technologics.map((tech, index) => (
+                            <span className={classes.tech} key={index}>{tech}&nbsp;&nbsp;</span>
+                        ))}</span>
                 </p>
                 <p className={classes.description}>
                     Description: <span className={classes.fields}>
-                    {item.description.length > 50 ? `${item.description.substring(0, 47)}...` : item.description}
+                        {item.description.length > 150 ? `${item.description.substring(0, 147)}...` : item.description}
 
                     </span>
                 </p>

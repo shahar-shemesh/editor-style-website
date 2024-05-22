@@ -31,7 +31,9 @@
 
 .fields {
     color: var(--textColor);
-
+    .tech {
+        display: inline-block;
+    }
     a {
         color: var(--keywordColor);
     }

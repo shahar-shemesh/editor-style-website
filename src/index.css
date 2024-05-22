@@ -9,7 +9,7 @@
   /***** Main Colors: *****/
   --textColor: #D4D4D4;
   --commentColor: #4a9741;
-  --pageBackgroung: hsl(0, 0%, 12%);
+  --pageBackgroung: #1f1f1f;
   --selectionBackground: #264F78;
   --keywordColor: #569CD6;
   --varColor: #8fcdef;
@@ -173,6 +173,10 @@ nav:focus-within {
 /************************************ responsive *************************/
 
 @media only screen and (max-width: 600px) {
+
+  *:focus {
+    outline: none;
+  }
 
   body {
     margin: 0 1.5rem 0 3rem;
