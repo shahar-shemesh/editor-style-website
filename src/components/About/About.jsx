@@ -21,7 +21,7 @@ export default function About() {
                         onDragOver={(e) => (e.preventDefault())}
                         onDrop={(e) => (e.preventDefault())}
                     >
-                        Hello there, welcome to my corner of the internet! I'm Shahar, a graduate of Computer Science,<br />
+                        Hello there, welcome to my corner of the internet! I'm Shahar, a computer science graduate,<br />
                         a software engineer by day, and an enthusiast of trips, music, and gadgets all the time!<br />
                         I have always been interested and intrigued by computers and technology. Since I can remember,<br />I've known what I wanted to do.
                         I love coding, creating, math, and playing piano.<br />
