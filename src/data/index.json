@@ -54,7 +54,7 @@
       "id": "2",
       "src": "/img/green-dorshemesh.com.png",
       "title": "Dor Portfolio website",
-      "description": "Portfolio website that I developed to showcase the works of a graphic designer. Responsive, ensuring a seamless experience across various devices, including mobile phones and tablets. HTML5, CSS3, JavaScript, MongoDB, ExpressJS, EJS",
+      "description": "A portfolio website that showcases the works, info, and contact details of a graphic designer.",
       "link": "dorshemesh.com",
       "technologics": ["express", "ejs", "html", "css", "javascript", "mongo"]
 
@@ -63,7 +63,7 @@
       "id": "3",
       "src": "/img/uzilaw.png",
       "title": "Uzi Law Firm's website",
-      "description": "A Law Firm's website showcasing their specialization. The site emphasizes the firm's comprehensive legal services. It features an intuitive user interface for easy navigation, ensuring visitors can quickly find information about the firm's expertise and contact details.",
+      "description": "A Law Firm's website showcasing their specialization. The site emphasizes the firm's comprehensive legal services.",
       "link": "www.uzilaw.co.il",
       "technologics": ["html", "css", "javascript"]
 
@@ -115,6 +115,15 @@
       "description": "A classic snake game - the player controls a snake that grows in length as it consumes food, while avoiding collisions with itself and the walls.",
       "link": "github.com/shahar-shemesh/snake-game",
       "technologics": ["c++", "oop"]
+    },
+    {
+      "id": "11",
+      "src": "/img/vscode.jpg",
+      "title": "VSCode Portfolio",
+      "description": "A themeable and developer-centric portfolio based on the VSCode style.",
+      "link": "shahar.website",
+      "technologics": ["react", "node", "javascript", "html", "css"]
+
     }
   ]
 }
