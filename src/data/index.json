@@ -56,7 +56,7 @@
       "title": "Auto installation on virtual machine",
       "description": "A script establishes an ssh connection to the guest's virtual machine and allows to select a local folder containing files to be installed. It copies and installs the files at the vm, executes powershell scripts silently and retrieves relevant files to host machine.",
       "link": "github.com/shahar-shemesh/file_installation_in_guest_vm",
-      "technologics": ["ssh", "powershell", "shell scripting"]
+      "technologics": ["python", "ssh", "powershell", "shell scripting"]
     },
     {
       "id": "2",
@@ -87,10 +87,10 @@
     {
       "id": "4",
       "src": "/img/barberbuddy.png",
-      "title": "Booking App",
+      "title": "Android Booking App",
       "description": "A barbershop booking app for easily booking appointments, showing barbershop info, and managing bookings.",
       "link": "github.com/shahar-shemesh/BARBERBUDDY",
-      "technologics": ["android studio", "react", "node"]
+      "technologics": ["java", "android-studio", "firebase"]
     },
     {
       "id": "5",

@@ -8,8 +8,8 @@
 .projectList {
     /* margin: 0 5rem; */
     display: grid;
-    grid-template-columns: repeat(2, minmax(25rem, 1fr));
-    column-gap: 1.5rem;
+    grid-template-columns: repeat(2, minmax(24rem, 1fr));
+    column-gap: 3rem;
     row-gap: 4.5rem;
     /* grid-template-rows: repeat(auto-fit, minmax(20rem, 1fr)); */
     /* grid-gap: 4rem; */

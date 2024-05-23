@@ -22,7 +22,7 @@ export default function Card({ item }) {
                 </p>
                 <p className={classes.description}>
                     Description: <span className={classes.fields}>
-                        {item.description.length > 150 ? `${item.description.substring(0, 147)}...` : item.description}
+                        {item.description.length > 122 ? `${item.description.substring(0, 119)}...` : item.description}
 
                     </span>
                 </p>

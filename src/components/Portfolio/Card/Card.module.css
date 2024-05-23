@@ -1,4 +1,3 @@
-
 .card {
     z-index: 2;
     /* margin-top: 1.5rem; */
@@ -16,24 +15,29 @@
     color: var(--lineNumbersColor);
 }
 
-.image img {
-    width: 80%;
-    padding-left: 1px;
-    height: 25vh;
-    object-fit: cover;
-    object-position: 50% 5%;
-    opacity: 0.8;
-    border-radius: 5px;
-    
+.image {
+    display: flex;
+    align-items: center;
+    height: 10.5rem;
+    img {
+        width: 80%;
+        height: 95%;
+        object-fit: cover;
+        object-position: 50% 5%;
+        opacity: 0.8;
+        border-radius: 5px;
+    }
 }
 
 
 
 .fields {
     color: var(--textColor);
+
     .tech {
         display: inline-block;
     }
+
     a {
         color: var(--keywordColor);
     }
@@ -43,8 +47,9 @@
     .cardContent {
         width: auto;
     }
+
     .image img {
-        width: 85%;
-        height: 15vh;
+        width: 100%;
+        height: 9rem;
     }
 }
