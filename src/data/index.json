@@ -40,7 +40,15 @@
       "title": "Gadish Suite application",
       "description": "An application that showcases suite rental. It provides potential guests with all the information they need to make an informed decision and book a stay.",
       "link": "gadish-suite.co.il",
-      "technologics": ["react", "html", "css", "javascript"]
+      "technologics": ["react", "html", "css-modules", "javascript"]
+    },
+    {
+      "id": "10",
+      "src": "/img/OmahaCOMP.png",
+      "title": "Poker Hand Evaluator",
+      "description": "A program designed to determine the winning hand in Omaha Hi/Lo poker games.",
+      "link": "github.com/shahar-shemesh/OmahaHiLo",
+      "technologics": ["c++", "oop"]
     },
     {
       "id": "9",
@@ -101,14 +109,6 @@
       "technologics": ["react", "javascript", "html", "css"]
     },
     {
-      "id": "10",
-      "src": "/img/OmahaCOMP.png",
-      "title": "Poker Hand Evaluator",
-      "description": "A program designed to determine the winning hand in Omaha Hi/Lo poker games.",
-      "link": "github.com/shahar-shemesh/OmahaHiLo",
-      "technologics": ["c++", "oop"]
-    },
-    {
       "id": "8",
       "src": "/img/snake.png",
       "title": "Classic Snake Game",
@@ -122,8 +122,7 @@
       "title": "VSCode Portfolio",
       "description": "A themeable and developer-centric portfolio based on the VSCode style.",
       "link": "shahar.website",
-      "technologics": ["react", "node", "javascript", "html", "css"]
-
+      "technologics": ["react", "node", "javascript", "html", "css-modules"]
     }
   ]
 }
