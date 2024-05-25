@@ -1,3 +1,5 @@
+import { Analytics } from "@vercel/analytics/react"
+
 import Divider from './components/Divider/Divider.jsx';
 import About from './components/About/About.jsx';
 import Header from './components/Header/Header.jsx';
@@ -11,6 +13,8 @@ function App() {
   return (
     <div className="App">
 
+      <Analytics />
+      
       <Header />
 
       <LineNumbers />
