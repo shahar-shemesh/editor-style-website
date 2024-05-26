@@ -15,7 +15,7 @@ export default function Skills() {
 
           <div key={index} className={classes.skillCard}>
 
-            <p className={classes.subject}>.{item.title}</p>
+            <p className={classes.subject}>{item.title}</p>
 
             <ul className={classes.stack}>
               {item?.stack?.map((skill) => (

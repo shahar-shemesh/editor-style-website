@@ -122,7 +122,7 @@
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1340px) {
     .skills {
         display: flex;
         flex-direction: column;
@@ -165,7 +165,7 @@
     }
 
     .skills > ul > div:nth-child(1) > ul {
-        left: 11.15rem;
+        left: 11rem;
         width: 65%;
 
         & .skillItem {
