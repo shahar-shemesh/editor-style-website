@@ -15,11 +15,22 @@
   --varColor: #8fcdef;
   --stringColor: #CE9178;
   --lineNumbersColor: #858585;
+  --lineNumbersColorFocus: #fff;
+  --leftLineColor: #5e5e5e;
+  --leftLineColorFocus: #b7b7b7;
   --numberColor: #B5CEA8;
   --logoNameColor: #f9d81b;
-  /* --functionColor: #dcdcaa; */
   --functionColor: #d8dcab;
   --navLinksColor: #cd7cc9;
+  --borderLineColor: #303030;
+  --caretColor: #fff;
+  --tabColor: #252526;
+  --tabBorderColor: #5e5e5e;
+  --skillItemBackgroundColor: #04395e;
+  --skillItemHoverColor: #2a2d2e;
+  --skillIconColor: #72b8f7;
+  --platformColor: #fff;
+
 
   /***** Main Font: *****/
   /* font-family: "Consolas", monospace; */
@@ -28,11 +39,107 @@
   line-height: 1.5rem;
   font-weight: 400;
 
-  color-scheme: light dark;
+  /* color-scheme: light dark; */
+  color-scheme: dark;
   color: rgba(255, 255, 255, 0.87);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
+
+
+  --moonColor: #1f1f1f;
+  --moonBackground: #fff;
+  --page-color-transition: all .5s ease, color .5s ease;
+
+}
+
+
+
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --textColor: #D4D4D4;
+    --commentColor: #4a9741;
+    --pageBackgroung: #1f1f1f;
+    --selectionBackground: #264F78;
+    --keywordColor: #569CD6;
+    --varColor: #8fcdef;
+    --stringColor: #CE9178;
+    --lineNumbersColor: #858585;
+    --lineNumbersColorFocus: #fff;
+    --leftLineColor: #5e5e5e;
+    --leftLineColorFocus: #b7b7b7;
+    --numberColor: #B5CEA8;
+    --logoNameColor: #f9d81b;
+    --functionColor: #d8dcab;
+    --navLinksColor: #cd7cc9;
+    --borderLineColor: #303030;
+    --caretColor: #fff;
+    --tabColor: #252526;
+    --tabBorderColor: #5e5e5e;
+    --skillItemBackgroundColor: #04395e;
+    --skillItemHoverColor: #2a2d2e;
+    --skillIconColor: #72b8f7;
+    --platformColor: #fff;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root{
+    color: #000;
+  --textColor: #000;
+  --commentColor: #188018;
+  --pageBackgroung: #ffffff;
+  --selectionBackground: #264F78;
+  --keywordColor: #0000FF;
+  --varColor: #001080;
+  --stringColor: #A31515;
+  --lineNumbersColor: #237893;
+  --lineNumbersColorFocus: #0b226f;
+  --leftLineColor: #d3d3d3;
+  --leftLineColorFocus: #939393;
+  --numberColor: #098658;
+  --logoNameColor: #795E26;
+  --functionColor: #795E26;
+  --navLinksColor: #b71ede;
+  --borderLineColor: #eeeeee;
+  --caretColor: #000;
+  --tabColor: #f1f1f2;
+  --tabBorderColor: #d9d9d9;
+  --skillItemBackgroundColor: #dbeafb;
+  --skillItemHoverColor: #dbeafb;
+  --skillIconColor: #084587;
+  --platformColor: #1f1f1f;
+  }
+} */
+
+[data-theme="light"] {
+
+  /***** Main Colors: *****/
+  color: #000;
+  --textColor: #000;
+  --commentColor: #188018;
+  --pageBackgroung: #ffffff;
+  --selectionBackground: #264F78;
+  --keywordColor: #0000FF;
+  --varColor: #001080;
+  --stringColor: #A31515;
+  --lineNumbersColor: #237893;
+  --lineNumbersColorFocus: #0b226f;
+  --leftLineColor: #d3d3d3;
+  --leftLineColorFocus: #939393;
+  --numberColor: #098658;
+  --logoNameColor: #795E26;
+  --functionColor: #795E26;
+  --navLinksColor: #b71ede;
+  --borderLineColor: #eeeeee;
+  --caretColor: #000;
+  --tabColor: #f1f1f2;
+  --tabBorderColor: #d9d9d9;
+  --skillItemBackgroundColor: #dbeafb;
+  --skillItemHoverColor: #dbeafb;
+  --skillIconColor: #084587;
+  --platformColor: #1f1f1f;
 
 }
 
@@ -44,6 +151,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   cursor: text;
   overflow-x: hidden;
+  transition: transform 0.8s ease-in-out, var(--page-color-transition);
+
+
 }
 
 
@@ -60,41 +170,11 @@ body *::selection {
 /**************************************************************/
 
 
-/* section,
-nav {
-  position: relative;
-  margin: 1.5rem 0 1.5rem 0;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    border-right: 1px solid #5e5e5e;
-  }
-
-  div,
-  h1,
-  span,
-  section,
-  li,
-  p {
-
-    &::before {
-      display: inline-block;
-      content: "";
-      width: 1em;
-    }
-  }
-} */
-
-
 section,
 nav {
   position: relative;
   margin: 3rem 0 3rem 0;
-  border: solid #5e5e5e;
+  border: solid var(--leftLineColor);
   border-width: 0 0 0 1px;
   padding-left: 1.5rem;
   scroll-snap-align: start;
@@ -108,7 +188,7 @@ header {
 
 section:focus-within,
 nav:focus-within {
-  border: solid #b7b7b7;
+  border: solid var(--leftLineColorFocus);
   border-width: 0 0 0 1px;
 }
 
@@ -146,7 +226,8 @@ nav:focus-within {
       /* width: 0.5vw; */
       margin-left: -5rem;
       margin-right: 5rem;
-      color: #a0a0a0;
+      /* color: #a0a0a0; */
+      color: var(--lineNumbersColor);
       width: 2em;
       text-align: right;
     }
@@ -154,20 +235,36 @@ nav:focus-within {
 }
 
 #lines p:focus-within {
-  border: solid #303030;
+  border: solid var(--borderLineColor);
   border-width: 2px 0 2px 2px;
   margin: -1px;
 
   &::before {
-    color: #fff;
+    color: var(--lineNumbersColorFocus);
 
   }
 }
 
 [contenteditable] {
   outline: 0px solid transparent;
-  caret-color: #fff;
+  caret-color: var(--caretColor);
 }
+
+
+
+#card {
+  opacity: 0.4;
+  transition: all 0.3s;
+}
+
+
+#card.in-view {
+  transition-property: transform, opacity;
+  /* transition-duration: 1s; */
+  transition-timing-function: linear;
+  opacity: 1;
+}
+
 
 
 /************************************ responsive *************************/

@@ -46,7 +46,7 @@ header {
 }
 
 .platformLink {
-    color: #fff;
+    color: var(--platformColor);
 }
 
 

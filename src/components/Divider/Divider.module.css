@@ -1,8 +1,11 @@
 .divider {
   display: flex;
-  /* font-size: 16px; */
   color: var(--commentColor);
   width: 60%;
+  align-items: baseline;
+  p {
+    font-size: 0.97rem;
+  }
 }
 
 .divider>p {
@@ -16,5 +19,6 @@
   .divider {
     width: 100%;
   }
+  
 
 }

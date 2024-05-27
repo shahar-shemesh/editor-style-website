@@ -4,7 +4,7 @@ import classes from './Card.module.css';
 export default function Card({ item }) {
 
     return (
-        <div className={classes.card}>
+        <div id='card' className={classes.card}>
 
             <div className={classes.image}>
                 <img src={item.src} />
