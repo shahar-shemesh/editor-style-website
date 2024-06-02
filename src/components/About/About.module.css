@@ -58,15 +58,27 @@
         b .7s infinite steps(1),
         t calc(var(--n)*35ms) steps(var(--n)) forwards;
 
-
-    a {
-        animation: show calc(var(--n)*13ms) forwards;
+    &::selection {
+        color: var(--stringColor);
     }
+
+
+    >a {
+        animation: show calc(var(--n)*12.5ms) forwards;
+        &::selection {
+            color: var(--keywordColor);
+            text-decoration-line: underline;
+        }
+    }
+
 }
+
+
 
 @keyframes show {
 
-    0%, 90%{
+    0%,
+    90% {
         color: transparent;
     }
 
