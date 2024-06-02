@@ -30,7 +30,7 @@
   --skillItemHoverColor: #2a2d2e;
   --skillIconColor: #72b8f7;
   --platformColor: #fff;
-
+  --brightness: 120%;
 
   /***** Main Font: *****/
   /* font-family: "Consolas", monospace; */
@@ -140,6 +140,7 @@
   --skillItemHoverColor: #dbeafb;
   --skillIconColor: #084587;
   --platformColor: #1f1f1f;
+  --brightness: 100%;
 
 }
 
