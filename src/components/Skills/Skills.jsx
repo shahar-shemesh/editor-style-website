@@ -1,7 +1,7 @@
 
 import classes from './Skills.module.css';
 import DATA from '../../data/index.json';
-
+import "./customIcons.css";
 
 export default function Skills() {
 
@@ -20,16 +20,17 @@ export default function Skills() {
             <ul className={classes.stack}>
               {item?.stack?.map((skill) => (
                 <li key={skill} className={classes.skillItem}>
-                  <i className={`${classes.icon} bx bxl-${skill.toLowerCase()} bx-sm`}></i>
+                  <i className={`${classes.icon} bx bx-sm bxl-${skill.toLowerCase()}`}></i>
                   <p className={classes.skillName}>{skill}</p>
                 </li>
               ))}
+
             </ul>
 
           </div>
 
         ))}
-      
+
       </ul>
 
     </section>

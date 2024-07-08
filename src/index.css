@@ -29,6 +29,10 @@
   --skillItemBackgroundColor: #04395e;
   --skillItemHoverColor: #2a2d2e;
   --skillIconColor: #72b8f7;
+
+  --hexToFilter: invert(77%) sepia(46%) saturate(6278%) hue-rotate(192deg) brightness(117%) contrast(94%);
+    /* https://isotropic.co/tool/hex-color-to-css-filter/ */
+
   --platformColor: #fff;
   --brightness: 120%;
 
@@ -139,6 +143,10 @@
   --skillItemBackgroundColor: #dbeafb;
   --skillItemHoverColor: #dbeafb;
   --skillIconColor: #084587;
+
+  --hexToFilter: invert(11%) sepia(67%) saturate(5980%) hue-rotate(203deg) brightness(92%) contrast(94%);
+  /* https://isotropic.co/tool/hex-color-to-css-filter/ */
+
   --platformColor: #1f1f1f;
   --brightness: 100%;
 
@@ -153,8 +161,6 @@ body {
   cursor: text;
   overflow-x: hidden;
   transition: transform 0.8s ease-in-out, var(--page-color-transition);
-
-
 }
 
 
@@ -266,6 +272,9 @@ nav:focus-within {
   opacity: 1;
 }
 
+.iconFill {
+  fill: #ffffff;
+}
 
 
 /************************************ responsive *************************/

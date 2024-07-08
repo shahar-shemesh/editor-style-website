@@ -4,9 +4,11 @@
       "id": "3",
       "title": "Programm` languages",
       "stack": [
-        "C/C++",
-        "Python",
+        "TypeScript",
         "JavaScript",
+        "Python",
+        "C++",
+        "C",
         "Java"
       ]
     },
@@ -16,9 +18,10 @@
       "stack": [
         "HTML5",
         "CSS3",
+        "Tailwind-CSS",
         "React",
         "Redux",
-        "Tailwind-CSS"
+        "NextJS"
       ]
     },
     {
@@ -27,9 +30,10 @@
       "stack": [
         "NodeJS",
         "MongoDB",
+        "MySQL",
+        "PostgreSQL",
         "Firebase",
-        "Django",
-        "MySQL"
+        "Django"
       ]
     }
   ],
