@@ -29,11 +29,11 @@
       "title": "Backend",
       "stack": [
         "NodeJS",
+        "Django",
         "MongoDB",
         "MySQL",
         "PostgreSQL",
-        "Firebase",
-        "Django"
+        "Firebase"
       ]
     }
   ],
