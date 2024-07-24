@@ -7,7 +7,7 @@ import Navigation from './components/Navigation/Navigation.jsx';
 import Portfolio from './components/Portfolio/Portfolio.jsx';
 import Skills from './components/Skills/Skills.jsx';
 import LineNumbers from './components/LineNumbers/LineNumbers.jsx';
-
+import Footer from "./components/Footer/Footer.jsx";
 
 function App() {
 
@@ -31,6 +31,8 @@ function App() {
       <Portfolio />
 
       <Analytics />
+
+      <Footer />
 
     </div>
   );

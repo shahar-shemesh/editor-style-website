@@ -20,8 +20,8 @@ export default function Skills() {
             <ul className={classes.stack}>
               {item?.stack?.map((skill) => (
                 <li key={skill} className={classes.skillItem}>
-                  <i className={`${classes.icon} bx bx-sm bxl-${skill.toLowerCase()}`}></i>
-                  <p className={classes.skillName}>{skill}</p>
+                  <i className={`${classes.icon} bx bx-sm bxl-${(skill.icon || skill).toLowerCase()}`}></i>
+                  <p className={classes.skillName}>{skill.name || skill}</p>
                 </li>
               ))}
 

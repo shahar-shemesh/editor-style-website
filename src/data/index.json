@@ -16,8 +16,14 @@
       "id": "1",
       "title": "Frontend",
       "stack": [
-        "HTML5",
-        "CSS3",
+        {
+          "name": "HTML",
+          "icon": "HTML5"
+        },
+        {
+          "name": "CSS",
+          "icon": "CSS3"
+        },
         "Tailwind-CSS",
         "React",
         "Redux",
@@ -29,6 +35,7 @@
       "title": "Backend",
       "stack": [
         "NodeJS",
+        "Flask",
         "Django",
         "MongoDB",
         "MySQL",
@@ -44,7 +51,12 @@
       "title": "Gadish Suite application",
       "description": "An application that showcases suite rental. It provides potential guests with all the information they need to make an informed decision and book a stay.",
       "link": "gadish-suite.co.il",
-      "technologics": ["react", "html", "css-modules", "javascript"]
+      "technologics": [
+        "react",
+        "html",
+        "css-modules",
+        "javascript"
+      ]
     },
     {
       "id": "10",
@@ -52,7 +64,10 @@
       "title": "Poker Hand Evaluator",
       "description": "A program designed to determine the winning hand in Omaha Hi/Lo poker games.",
       "link": "github.com/shahar-shemesh/OmahaHiLo",
-      "technologics": ["c++", "oop"]
+      "technologics": [
+        "c++",
+        "oop"
+      ]
     },
     {
       "id": "9",
@@ -60,7 +75,12 @@
       "title": "Auto installation on virtual machine",
       "description": "A script establishes an ssh connection to the guest's virtual machine and allows to select a local folder containing files to be installed. It copies and installs the files at the vm, executes powershell scripts silently and retrieves relevant files to host machine.",
       "link": "github.com/shahar-shemesh/file_installation_in_guest_vm",
-      "technologics": ["python", "ssh", "powershell", "shell scripting"]
+      "technologics": [
+        "python",
+        "ssh",
+        "powershell",
+        "shell scripting"
+      ]
     },
     {
       "id": "2",
@@ -68,25 +88,27 @@
       "title": "Dor Portfolio website",
       "description": "A portfolio website that showcases the works, info, and contact details of a graphic designer.",
       "link": "dorshemesh.com",
-      "technologics": ["express", "ejs", "html", "css", "javascript", "mongo"]
-
-    },
-    {
-      "id": "3",
-      "src": "/img/uzilaw.png",
-      "title": "Uzi Law Firm's website",
-      "description": "A Law Firm's website showcasing their specialization. The site emphasizes the firm's comprehensive legal services.",
-      "link": "www.uzilaw.co.il",
-      "technologics": ["html", "css", "javascript"]
-
+      "technologics": [
+        "express",
+        "ejs",
+        "html",
+        "css",
+        "javascript",
+        "mongo"
+      ]
     },
     {
       "id": "7",
       "src": "/img/shoppinglisttoapi.png",
-      "title": "Shopping list to API",
+      "title": "Shopping list API",
       "description": "A platform for managing shopping lists efficiently. Users can create, update, and store their lists in a SQL database.",
       "link": "github.com/shahar-shemesh/shoppinglist-to-api",
-      "technologics": ["node", "azure", "mssql", "javascript"]
+      "technologics": [
+        "node",
+        "azure",
+        "mssql",
+        "javascript"
+      ]
     },
     {
       "id": "4",
@@ -94,7 +116,11 @@
       "title": "Android Booking App",
       "description": "A barbershop booking app for easily booking appointments, showing barbershop info, and managing bookings.",
       "link": "github.com/shahar-shemesh/BARBERBUDDY",
-      "technologics": ["java", "android-studio", "firebase"]
+      "technologics": [
+        "java",
+        "android-studio",
+        "firebase"
+      ]
     },
     {
       "id": "5",
@@ -102,7 +128,11 @@
       "title": "Food Order App",
       "description": "A food ordering platform for jank-food and home-cooked meals.",
       "link": "github.com/shahar-shemesh/sunshine-food-app",
-      "technologics": ["react", "node", "javascript"]
+      "technologics": [
+        "react",
+        "node",
+        "javascript"
+      ]
     },
     {
       "id": "6",
@@ -110,7 +140,12 @@
       "title": "Tic Tac Toe game",
       "description": "A tic tac toe game for two players. runs in any modern web browser.",
       "link": "github.com/shahar-shemesh/reactjs-Tic-Tac-Toe-Game",
-      "technologics": ["react", "javascript", "html", "css"]
+      "technologics": [
+        "react",
+        "javascript",
+        "html",
+        "css"
+      ]
     },
     {
       "id": "8",
@@ -118,7 +153,10 @@
       "title": "Classic Snake Game",
       "description": "A classic snake game - the player controls a snake that grows in length as it consumes food, while avoiding collisions with itself and the walls.",
       "link": "github.com/shahar-shemesh/snake-game",
-      "technologics": ["c++", "oop"]
+      "technologics": [
+        "c++",
+        "oop"
+      ]
     },
     {
       "id": "11",
@@ -126,7 +164,13 @@
       "title": "VSCode Portfolio",
       "description": "A themeable and developer-centric portfolio based on the VSCode style.",
       "link": "shahar.website",
-      "technologics": ["react", "node", "javascript", "html", "css-modules"]
+      "technologics": [
+        "react",
+        "node",
+        "javascript",
+        "html",
+        "css-modules"
+      ]
     }
   ]
 }

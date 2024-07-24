@@ -18,7 +18,7 @@ export default function LineNumbers({ }) {
         // rootElement.style.setProperty('--pageRows', rowsRrid);
 
         // const rowsa = document.documentElement.getBoundingClientRect().height;
-        const screenHeight = document.body.scrollHeight;
+        const screenHeight = document.body.scrollHeight * 1.1;
 
         const lineHeight = 16*1.5;
         setRows(Math.floor(screenHeight/lineHeight));

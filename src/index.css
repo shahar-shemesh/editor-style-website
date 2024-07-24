@@ -33,6 +33,10 @@
   --hexToFilter: invert(77%) sepia(46%) saturate(6278%) hue-rotate(192deg) brightness(117%) contrast(94%);
     /* https://isotropic.co/tool/hex-color-to-css-filter/ */
 
+  --terminalButtonsColor: invert(87%) sepia(6%) saturate(97%) hue-rotate(251deg) brightness(89%) contrast(85%);
+    /* https://isotropic.co/tool/hex-color-to-css-filter/ */
+
+    
   --platformColor: #fff;
   --brightness: 120%;
 
