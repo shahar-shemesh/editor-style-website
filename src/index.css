@@ -36,6 +36,9 @@
   --terminalButtonsColor: invert(87%) sepia(6%) saturate(97%) hue-rotate(251deg) brightness(89%) contrast(85%);
     /* https://isotropic.co/tool/hex-color-to-css-filter/ */
 
+    --resizeAlertColor: invert(100%) sepia(100%) saturate(0%) hue-rotate(295deg) brightness(106%) contrast(105%);
+    /* https://isotropic.co/tool/hex-color-to-css-filter/ */
+
     
   --platformColor: #fff;
   --brightness: 120%;
@@ -60,66 +63,6 @@
   --page-color-transition: all .5s ease, color .5s ease;
 
 }
-
-
-
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --textColor: #D4D4D4;
-    --commentColor: #4a9741;
-    --pageBackgroung: #1f1f1f;
-    --selectionBackground: #264F78;
-    --keywordColor: #569CD6;
-    --varColor: #8fcdef;
-    --stringColor: #CE9178;
-    --lineNumbersColor: #858585;
-    --lineNumbersColorFocus: #fff;
-    --leftLineColor: #5e5e5e;
-    --leftLineColorFocus: #b7b7b7;
-    --numberColor: #B5CEA8;
-    --logoNameColor: #f9d81b;
-    --functionColor: #d8dcab;
-    --navLinksColor: #cd7cc9;
-    --borderLineColor: #303030;
-    --caretColor: #fff;
-    --tabColor: #252526;
-    --tabBorderColor: #5e5e5e;
-    --skillItemBackgroundColor: #04395e;
-    --skillItemHoverColor: #2a2d2e;
-    --skillIconColor: #72b8f7;
-    --platformColor: #fff;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  :root{
-    color: #000;
-  --textColor: #000;
-  --commentColor: #188018;
-  --pageBackgroung: #ffffff;
-  --selectionBackground: #264F78;
-  --keywordColor: #0000FF;
-  --varColor: #001080;
-  --stringColor: #A31515;
-  --lineNumbersColor: #237893;
-  --lineNumbersColorFocus: #0b226f;
-  --leftLineColor: #d3d3d3;
-  --leftLineColorFocus: #939393;
-  --numberColor: #098658;
-  --logoNameColor: #795E26;
-  --functionColor: #795E26;
-  --navLinksColor: #b71ede;
-  --borderLineColor: #eeeeee;
-  --caretColor: #000;
-  --tabColor: #f1f1f2;
-  --tabBorderColor: #d9d9d9;
-  --skillItemBackgroundColor: #dbeafb;
-  --skillItemHoverColor: #dbeafb;
-  --skillIconColor: #084587;
-  --platformColor: #1f1f1f;
-  }
-} */
 
 [data-theme="light"] {
 
@@ -150,6 +93,10 @@
 
   --hexToFilter: invert(11%) sepia(67%) saturate(5980%) hue-rotate(203deg) brightness(92%) contrast(94%);
   /* https://isotropic.co/tool/hex-color-to-css-filter/ */
+
+  --resizeAlertColor: invert(13%) sepia(51%) saturate(2614%) hue-rotate(203deg) brightness(106%) contrast(100%);
+    /* https://isotropic.co/tool/hex-color-to-css-filter/ */
+
 
   --platformColor: #1f1f1f;
   --brightness: 100%;
