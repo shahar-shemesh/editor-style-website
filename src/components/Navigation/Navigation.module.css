@@ -2,6 +2,7 @@ nav a {
     margin: 2rem 0 1rem 0;
     color: var(--navLinksColor) !important;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .nav_links{

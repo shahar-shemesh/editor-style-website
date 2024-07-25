@@ -17,19 +17,19 @@ export default function Navigation() {
       <ul className={classes.nav_links}>
 
         <li className={classes.nav_item}>
-          <a href="#about" className="navLink">about me</a>
+          <a href="#about">about me</a>
         </li>
 
         <li className={classes.nav_item}>
-          <a href="#myskills" className="navLink">my skills</a>
+          <a href="#myskills">my skills</a>
         </li>
 
         <li className={classes.nav_item}>
-          <a href="#portfolio" className="navLink">portfolio</a>
+          <a href="#portfolio">portfolio</a>
         </li>
 
         <li className={classes.nav_item}>
-          <a onClick={expandTerminal} className="navLink">contact</a>
+          <a onClick={expandTerminal}>contact</a>
         </li>
 
       </ul>

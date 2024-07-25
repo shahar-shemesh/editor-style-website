@@ -17,8 +17,9 @@
 
     & input,
     & textarea {
+        color: var(--stringColor);
         border: none;
-        background-color: transparent;
+        /* background-color: transparent; */
         box-sizing: border-box;
         resize: none;
         width: 30vh;

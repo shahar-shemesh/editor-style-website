@@ -33,10 +33,6 @@ export default function Footer() {
   // }
 
 
-
-
-
-
   const terminalMessage = useRef();
   const contactForm = useRef();
 
@@ -49,7 +45,6 @@ export default function Footer() {
       }, { once: true }); // Ensures the listener is removed after it's called
     }
   };
-
 
 
 
@@ -169,4 +164,3 @@ export default function Footer() {
     </footer>
   );
 };
-
