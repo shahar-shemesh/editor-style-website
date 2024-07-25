@@ -8,9 +8,11 @@
 .field {
     display: flex;
     width: fit-content;
-
+    color: var(--terminalTabsColor);
     & label {
         width: 5rem;
+        color: var(--terminalTabsColor);
+
     }
 
     & input,
@@ -21,15 +23,19 @@
         resize: none;
         width: 30vh;
         outline: none;
+        
     }
 }
 
 .submit {
 
     & input {
+        border: solid var(--leftLineColor) 1.5px;
         border-radius: 5px;
         background-color: transparent;
         outline: none;
+        color: var(--terminalTabsColor);
+
     }
 }
 

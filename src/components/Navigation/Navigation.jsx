@@ -1,8 +1,15 @@
 
 import classes from './Navigation.module.css';
-
+import footerClasses from '../Footer/Footer.module.css';
 
 export default function Navigation() {
+
+  function expandTerminal() {
+    let footer = document.getElementById("footer");
+    let arrow = document.getElementById("expandTerminal");
+    footer.className += footerClasses.expand;
+    arrow.className = "arrow-down";
+  }
 
 
   return (
@@ -22,7 +29,7 @@ export default function Navigation() {
         </li>
 
         <li className={classes.nav_item}>
-          <a target='_blank' href="mailto:shahar@usa.com" className="navLink">contact</a>
+          <a onClick={expandTerminal} className="navLink">contact</a>
         </li>
 
       </ul>

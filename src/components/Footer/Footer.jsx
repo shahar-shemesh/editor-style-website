@@ -7,28 +7,38 @@ export default function Footer() {
 
   const [leaveMessageVisible, setLeaveMessageVisible] = useState(true);
   const [contactFormVisible, setContactFormVisible] = useState(true);
+  const [expandTerminal, setExpandTerminal] = useState(false);
 
-  function expendTerminal() {
-    let footer = document.getElementById("footer");
-    let arrow = document.getElementById("expendTerminal");
-    switch (arrow.className) {
-      case "arrow-up":
-        footer.className += classes.expend;
-        arrow.className = "arrow-down";
-        break;
+  // function expandTerminal() {
+  //   let footer = document.getElementById("footer");
+  //   let arrow = document.getElementById("expandTerminal");
+  //   switch (arrow.className) {
+  //     case "arrow-up":
+  //       footer.className += classes.expand;
+  //       arrow.className = "arrow-down";
+  //       break;
 
-      case "arrow-down":
-        footer.className = "";
-        footer.attributeStyleMap.clear();
-        arrow.className = "arrow-up";
-        break;
-    }
-  }
+  //     case "arrow-down":
+  //       footer.className = "";
+  //       footer.attributeStyleMap.clear();
+  //       arrow.className = "arrow-up";
+  //       break;
+  //   }
+  // }
+
+  // function shrinkTerminal(){
+  //   let footer = document.getElementById("footer");
+  //   let arrow = document.getElementById("expandTerminal");
+
+  // }
 
 
 
-  const terminalMessage = useRef(null);
-  const contactForm = useRef(null);
+
+
+
+  const terminalMessage = useRef();
+  const contactForm = useRef();
 
   const handleHide = (ref) => {
     if (ref.current) {
@@ -44,16 +54,32 @@ export default function Footer() {
 
 
   const viewportHeight = window.innerHeight;
-  const vh = 85;
+  const vh = 80;
   const px = (vh / 100) * viewportHeight;
   const [sidebarTop, setSidebarTop] = useState(px);
   const sidebarRef = useRef(null);
+
+
+  function onTerminal() {
+    setExpandTerminal((prevVal) => {
+      if (prevVal) {
+        setSidebarTop(px);
+        return false;
+      }
+      else {
+        return true;
+      }
+    });
+  }
+
+
 
   const rsMouseDownHandler = (e) => {
 
     if (["INPUT", "TEXTAREA"].includes(e.target.tagName)) {
       setLeaveMessageVisible(false);
       handleHide(terminalMessage);
+      setExpandTerminal(true);
     }
 
     else {
@@ -83,7 +109,13 @@ export default function Footer() {
 
   return (
 
-    <footer id='footer' ref={sidebarRef} onMouseDown={rsMouseDownHandler} style={{ top: `${sidebarTop}px` }}>
+    <footer
+      id='footer'
+      ref={sidebarRef}
+      onMouseDown={rsMouseDownHandler}
+      style={{ top: `${sidebarTop}px` }}
+      className={expandTerminal ? classes.expand : ""}
+    >
 
       <div className={classes.resizer} style={{ cursor: 'ns-resize' }}>
         <span className={classes.resizeAlert}><i className={`resize`}></i></span>
@@ -96,7 +128,7 @@ export default function Footer() {
               <a className={classes.tab + " " + classes.active}>LEAVE A MESSAGE</a>
               <a className={classes.tab}>COPYRIGHTS</a>
               <a className={classes.tab}>PLATFORMS</a>
-              <a className={classes.tab}>TOP</a>
+              <a href='#' className={classes.tab}>TOP</a>
 
             </div>
           </div>
@@ -122,7 +154,10 @@ export default function Footer() {
           <span><i className='bx bash'></i>bash</span>
           <span><i className='plus'></i><i className='arrow-down'></i></span>
           <span><i className='trash'></i></span>
-          <span onClick={expendTerminal}><i className='arrow-up' id='expendTerminal' value="0"></i></span>
+
+          {!expandTerminal && (<span onClick={onTerminal}><i className='arrow-up' id='expandTerminal'></i></span>)}
+          {expandTerminal && (<span onClick={onTerminal}><i className='arrow-down' id='expandTerminal'></i></span>)}
+
           <span onClick={() => { document.getElementById("footer").style.display = "none"; }}>
             <i className='close'></i>
           </span>
@@ -134,3 +169,4 @@ export default function Footer() {
     </footer>
   );
 };
+

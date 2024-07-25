@@ -29,17 +29,18 @@
   --skillItemBackgroundColor: #04395e;
   --skillItemHoverColor: #2a2d2e;
   --skillIconColor: #72b8f7;
-
+  --terminalTabsColor: #858585;
+  
   --hexToFilter: invert(77%) sepia(46%) saturate(6278%) hue-rotate(192deg) brightness(117%) contrast(94%);
-    /* https://isotropic.co/tool/hex-color-to-css-filter/ */
+  /* https://isotropic.co/tool/hex-color-to-css-filter/ */
 
   --terminalButtonsColor: invert(87%) sepia(6%) saturate(97%) hue-rotate(251deg) brightness(89%) contrast(85%);
-    /* https://isotropic.co/tool/hex-color-to-css-filter/ */
+  /* https://isotropic.co/tool/hex-color-to-css-filter/ */
 
-    --resizeAlertColor: invert(100%) sepia(100%) saturate(0%) hue-rotate(295deg) brightness(106%) contrast(105%);
-    /* https://isotropic.co/tool/hex-color-to-css-filter/ */
+  --resizeAlertColor: invert(100%) sepia(100%) saturate(0%) hue-rotate(295deg) brightness(106%) contrast(105%);
+  /* https://isotropic.co/tool/hex-color-to-css-filter/ */
 
-    
+
   --platformColor: #fff;
   --brightness: 120%;
 
@@ -90,13 +91,16 @@
   --skillItemBackgroundColor: #dbeafb;
   --skillItemHoverColor: #dbeafb;
   --skillIconColor: #084587;
+  --terminalTabsColor: #393939;
 
   --hexToFilter: invert(11%) sepia(67%) saturate(5980%) hue-rotate(203deg) brightness(92%) contrast(94%);
   /* https://isotropic.co/tool/hex-color-to-css-filter/ */
 
   --resizeAlertColor: invert(13%) sepia(51%) saturate(2614%) hue-rotate(203deg) brightness(106%) contrast(100%);
-    /* https://isotropic.co/tool/hex-color-to-css-filter/ */
+  /* https://isotropic.co/tool/hex-color-to-css-filter/ */
 
+  --terminalButtonsColor: invert(22%) sepia(0%) saturate(0%) hue-rotate(143deg) brightness(94%) contrast(95%);
+  /* https://isotropic.co/tool/hex-color-to-css-filter/ */
 
   --platformColor: #1f1f1f;
   --brightness: 100%;
