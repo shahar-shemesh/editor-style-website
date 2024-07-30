@@ -22,7 +22,7 @@ export default function TerminalMessage({ }) {
         <span className={classes.name}>[shahar]</span>
         <span className={classes.message}>leave a message</span>
         {/* <span className={classes.path}>/{fullPath}</span> */}
-        <span className={classes.path}>/Contact</span>
+        <span className={classes.path}>/contact</span>
         <span className={classes.fileUpdated}>(x{visitCount})</span>
     </div>);
 };
