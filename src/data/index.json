@@ -27,14 +27,20 @@
         "Tailwind-CSS",
         "React",
         "Redux",
-        "NextJS"
+        {
+          "name": "Next",
+          "icon": "NextJS"
+        }
       ]
     },
     {
       "id": "2",
       "title": "Backend",
       "stack": [
-        "NodeJS",
+        {
+          "name": "Node",
+          "icon": "NodeJS"
+        },
         "Flask",
         "Django",
         "MongoDB",
@@ -70,7 +76,7 @@
       ]
     },
     {
-      "id": "9",
+      "id": "6",
       "src": "/img/file-installation.jpg",
       "title": "Auto installation on virtual machine",
       "description": "A script establishes an ssh connection to the guest's virtual machine and allows to select a local folder containing files to be installed. It copies and installs the files at the vm, executes powershell scripts silently and retrieves relevant files to host machine.",
@@ -98,20 +104,7 @@
       ]
     },
     {
-      "id": "7",
-      "src": "/img/shoppinglisttoapi.png",
-      "title": "Shopping list API",
-      "description": "A platform for managing shopping lists efficiently. Users can create, update, and store their lists in a SQL database.",
-      "link": "github.com/shahar-shemesh/shoppinglist-to-api",
-      "technologics": [
-        "node",
-        "azure",
-        "mssql",
-        "javascript"
-      ]
-    },
-    {
-      "id": "4",
+      "id": "5",
       "src": "/img/barberbuddy.png",
       "title": "Android Booking App",
       "description": "A barbershop booking app for easily booking appointments, showing barbershop info, and managing bookings.",
@@ -123,7 +116,7 @@
       ]
     },
     {
-      "id": "5",
+      "id": "4",
       "src": "/img/sunshineFood.png",
       "title": "Food Order App",
       "description": "A food ordering platform for jank-food and home-cooked meals.",
@@ -135,7 +128,7 @@
       ]
     },
     {
-      "id": "6",
+      "id": "7",
       "src": "/img/tic-tac-toe-game.png",
       "title": "Tic Tac Toe game",
       "description": "A tic tac toe game for two players. runs in any modern web browser.",
@@ -159,7 +152,7 @@
       ]
     },
     {
-      "id": "11",
+      "id": "3",
       "src": "/img/vscode.jpg",
       "title": "VSCode Portfolio",
       "description": "A themeable and developer-centric portfolio based on the VSCode style.",

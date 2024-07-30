@@ -18,7 +18,7 @@ export default function Portfolio() {
       });
     }, {
       rootMargin: '0% 0% -10% 0%',
-      threshold: 0.5 // Adjust this value as needed
+      threshold: 0.5
     });
 
     items.forEach(item => {
@@ -28,12 +28,12 @@ export default function Portfolio() {
 
   }, []);
 
-
+  const sortedPortfolio = DATA?.portfolio?.sort((a, b) => parseInt(a.id) - parseInt(b.id));
 
   return (
     <section tabIndex="0" id="portfolio" className={classes.portfolio}>
       <ul className={classes.projectList}>
-        {DATA?.portfolio?.map((project, index) =>
+        {sortedPortfolio.map((project, index) =>
           <Card key={index} item={project} />
         )}
       </ul>

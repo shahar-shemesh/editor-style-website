@@ -9,29 +9,6 @@ export default function Footer() {
   const [contactFormVisible, setContactFormVisible] = useState(true);
   const [expandTerminal, setExpandTerminal] = useState(false);
 
-  // function expandTerminal() {
-  //   let footer = document.getElementById("footer");
-  //   let arrow = document.getElementById("expandTerminal");
-  //   switch (arrow.className) {
-  //     case "arrow-up":
-  //       footer.className += classes.expand;
-  //       arrow.className = "arrow-down";
-  //       break;
-
-  //     case "arrow-down":
-  //       footer.className = "";
-  //       footer.attributeStyleMap.clear();
-  //       arrow.className = "arrow-up";
-  //       break;
-  //   }
-  // }
-
-  // function shrinkTerminal(){
-  //   let footer = document.getElementById("footer");
-  //   let arrow = document.getElementById("expandTerminal");
-
-  // }
-
 
   const terminalMessage = useRef();
   const contactForm = useRef();

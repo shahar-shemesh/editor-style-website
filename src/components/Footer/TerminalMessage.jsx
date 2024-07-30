@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef  } from 'react';
+import { useState, useEffect  } from 'react';
 import classes from './Footer.module.css';
 
 
@@ -17,12 +17,12 @@ export default function TerminalMessage({ }) {
     }, []);
 
 
-    return (<div id='leaveMessage' className={classes.leaveMessage} >
-        <p className={classes.currentTime}>{time}</p>
-        <p className={classes.name}>[shahar]</p>
-        <p className={classes.message}>leave a message</p>
-        <p className={classes.path}>/{fullPath}</p>
-        <p className={classes.fileUpdated}>(x{visitCount})</p>
+    return (<div id='leaveMessage' className={classes.leaveMessage}>
+        <span className={classes.currentTime}>{time}</span>
+        <span className={classes.name}>[shahar]</span>
+        <span className={classes.message}>leave a message</span>
+        <span className={classes.path}>/{fullPath}</span>
+        <span className={classes.fileUpdated}>(x{visitCount})</span>
     </div>);
 };
 
