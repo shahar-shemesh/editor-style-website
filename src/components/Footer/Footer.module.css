@@ -80,7 +80,7 @@ footer {
 
 .leaveMessage {
     display: flex;
-    width: 100%;
+    width: 90%;
     column-gap: 0.5rem;
     font-size: 1.04rem;
     margin-top: 0.2rem;
