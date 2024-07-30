@@ -107,10 +107,10 @@ export default function Footer() {
 
 
 
-          <span
+          <div
             className={classes['slide-up'] + ` ${!leaveMessageVisible ? classes['slide-up-hidden'] : ''}`}>
             <TerminalMessage ref={terminalMessage} />
-          </span>
+          </div>
 
 
 
