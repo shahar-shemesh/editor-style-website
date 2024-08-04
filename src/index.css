@@ -30,6 +30,9 @@
   --skillItemHoverColor: #2a2d2e;
   --skillIconColor: #72b8f7;
   --terminalTabsColor: #858585;
+  --terminalTabFocusColor: #fff;
+  --terminalMsgColor: #5cc965;
+  --terminalNameColor: #24b8db;
   
   --hexToFilter: invert(77%) sepia(46%) saturate(6278%) hue-rotate(192deg) brightness(117%) contrast(94%);
   /* https://isotropic.co/tool/hex-color-to-css-filter/ */
@@ -91,7 +94,11 @@
   --skillItemBackgroundColor: #dbeafb;
   --skillItemHoverColor: #dbeafb;
   --skillIconColor: #084587;
-  --terminalTabsColor: #393939;
+  --terminalTabsColor: #a3a4a6;
+  --terminalTabFocusColor: #525353;
+  --terminalMsgColor: #beb364;  
+  --terminalNameColor: #24b8db;  
+
 
   --hexToFilter: invert(11%) sepia(67%) saturate(5980%) hue-rotate(203deg) brightness(92%) contrast(94%);
   /* https://isotropic.co/tool/hex-color-to-css-filter/ */

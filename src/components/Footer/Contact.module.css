@@ -8,10 +8,10 @@
 .field {
     display: flex;
     width: fit-content;
-    color: var(--terminalTabsColor);
+    color: var(--terminalTabFocusColor);
     & label {
         width: 5rem;
-        color: var(--terminalTabsColor);
+        color: var(--terminalTabFocusColor);
 
     }
 
@@ -35,7 +35,7 @@
         border-radius: 5px;
         background-color: transparent;
         outline: none;
-        color: var(--terminalTabsColor);
+        color: var(--terminalTabFocusColor);
 
     }
 }

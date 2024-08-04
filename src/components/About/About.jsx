@@ -34,10 +34,7 @@ export default function About() {
                     </span>
                 </div>
 
-                <div className={classes.content}>
-                    <p></p>
-                    <p></p>
-                </div>
+
 
             </section>
         </>

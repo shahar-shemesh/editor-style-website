@@ -9,15 +9,8 @@
     }
 }
 
-/* .content {
-    display: grid;
-    color: var(--stringColor);
-} */
-
-
 
 .content span {
-    /* display: inline-block; */
     width: fit-content;
     z-index: 2;
     user-drag: none;

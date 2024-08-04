@@ -64,17 +64,17 @@ footer {
     color: var(--terminalTabsColor);
     letter-spacing: -0.1px;
     font-size: 0.87rem;
-    text-shadow: 0.3px 0px 0px var(--lineNumbersColor);
+    text-shadow: 0.3px 0px 0px var(--terminalTabsColor);
     column-gap: 1.8rem;
 }
 
 .tab:hover {
-    color: var(--lineNumbersColorFocus);
+    color: var(--terminalTabFocusColor);
 }
 
 .active {
-    color: var(--lineNumbersColorFocus);
-    border-bottom: solid var(--lineNumbersColorFocus) 1.5px;
+    color: var(--terminalTabFocusColor);
+    border-bottom: solid var(--terminalTabFocusColor) 1.5px;
     padding: 0 2px 1px 2px;
 }
 
@@ -113,7 +113,7 @@ footer {
 
 .currentTime,
 .path {
-    color: var(--lineNumbersColor);
+    color: var(--terminalTabsColor);
 }
 
 .fileUpdated {
